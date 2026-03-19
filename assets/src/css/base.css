@@ -1,0 +1,34 @@
+@layer base {
+  html {
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  body {
+    @apply bg-surface-body text-gray-200;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-card;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border-light rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+::-webkit-scrollbar-corner {
+  @apply bg-surface-card;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.border.light') theme('colors.surface.card');
+}

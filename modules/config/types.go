@@ -1,0 +1,43 @@
+package config
+
+type Config struct {
+	DBPath               string
+	Domain               string
+	HTTPAddr             string
+	SMTPAddr             string
+	SMTPRelay            string
+	Secure               bool
+	MasterKey            string
+	DeliveryKey          string
+	MediaDir             string
+	AssetsDir            string
+	StorageDir           string
+	MaxFileSize          int64
+	MaxAttachments       int
+	MaxTotalSize         int64
+	MaxBodySize          string
+	ReservedUsernames    []string
+	BlockedEmailDomains  []string
+	ProxyBlockedHosts    []string
+	ProxyBlockedSuffixes []string
+	ProxyAllowedTypes    []string
+	RateLimitEnabled     bool
+	RateLimitDefault     int
+	RateLimitBurst       int
+	RateLimitAuth        int
+	RateLimitAuthBurst   int
+	VerificationExpiry   int
+	MaxStorage           int64
+	MaxAvatarSize        int64
+	MaxAliases           int
+	CaptchaEnabled       bool
+	RecaptchaSiteKey     string
+	RecaptchaSecretKey   string
+	WSWriteWait          int
+	WSPongWait           int
+	WSMaxMessageSize     int64
+	WSReadBufferSize     int
+	WSWriteBufferSize    int
+	WSMaxConnsPerUser    int
+	WSAllowedOrigins     []string
+}

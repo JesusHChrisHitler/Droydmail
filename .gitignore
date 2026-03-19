@@ -1,0 +1,5 @@
+deploy.sh
+droydmail.db
+storage/
+node_modules/
+data/

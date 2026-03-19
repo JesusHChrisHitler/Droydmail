@@ -1,0 +1,56 @@
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-3 bg-surface-card border border-border-light rounded-lg text-white text-sm focus:border-primary focus:outline-none transition-colors;
+  }
+  .input-field::placeholder {
+    @apply text-gray-500;
+  }
+  .card {
+    @apply bg-surface-card border border-border rounded-xl;
+  }
+  .sidebar-item {
+    @apply w-full text-left px-4 py-2.5 rounded-lg text-sm flex items-center gap-3 transition-colors;
+  }
+  .sidebar-item-active {
+    @apply bg-primary/20 text-primary-light;
+  }
+  .sidebar-item-inactive {
+    @apply text-gray-400 hover:bg-border hover:text-white;
+  }
+  .dropdown-trigger {
+    @apply px-2 py-1 md:px-3 md:py-1.5 text-[11px] md:text-xs font-medium rounded-lg transition-all flex items-center gap-1 md:gap-1.5 border;
+  }
+  .dropdown-trigger-default {
+    @apply text-gray-400 border-transparent hover:text-white hover:bg-border;
+  }
+  .dropdown-trigger-active {
+    @apply bg-primary/20 text-primary-light border-primary/30 hover:bg-primary/30;
+  }
+  .dropdown-panel {
+    @apply absolute right-0 top-full mt-1.5 md:mt-2 w-[calc(100vw-2rem)] max-w-[18rem] md:max-w-[20rem] bg-surface-card border border-border rounded-xl shadow-2xl z-50 overflow-hidden;
+  }
+  .dropdown-option {
+    @apply w-full px-2.5 py-2 md:px-3 md:py-2.5 flex items-center gap-2 md:gap-3 text-left text-xs md:text-sm transition-colors rounded-lg;
+  }
+  .dropdown-option-default {
+    @apply text-gray-300 hover:bg-surface-body;
+  }
+  .dropdown-option-active {
+    @apply bg-primary/10 text-primary-light;
+  }
+  .dropdown-section-title {
+    @apply px-2.5 py-1.5 md:px-3 md:py-2 text-[10px] md:text-xs font-medium text-gray-500 uppercase tracking-wider;
+  }
+  .dropdown-checkbox {
+    @apply w-4 h-4 md:w-5 md:h-5 rounded border-2 flex items-center justify-center transition-all shrink-0;
+  }
+  .dropdown-checkbox-unchecked {
+    @apply border-border-light group-hover:border-gray-500;
+  }
+  .dropdown-checkbox-checked {
+    @apply bg-primary border-primary;
+  }
+  .dropdown-scroll {
+    @apply max-h-36 md:max-h-48 overflow-y-auto;
+  }
+}

@@ -1,0 +1,11 @@
+@layer components {
+  .card {
+    @apply bg-surface-card border border-border rounded-xl;
+  }
+  .card-hover {
+    @apply bg-surface-body rounded-lg hover:bg-border transition-colors;
+  }
+  .card-padding {
+    @apply p-4 md:p-6;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "droydmail-frontend",
+  "scripts": {
+    "build:js": "esbuild assets/src/js/app.jsx --bundle --outfile=assets/public/js/app.js --jsx=automatic",
+    "build:css": "tailwindcss -i assets/src/css/app.css -o assets/public/css/app.css --minify",
+    "build": "npm run build:js && npm run build:css",
+    "watch:js": "esbuild assets/src/js/app.jsx --bundle --outfile=assets/public/js/app.js --jsx=automatic --watch",
+    "watch:css": "tailwindcss -i assets/src/css/app.css -o assets/public/css/app.css --watch",
+    "dev": "npm run watch:js & npm run watch:css"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

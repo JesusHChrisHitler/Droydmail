@@ -1,0 +1,29 @@
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary hover:bg-primary-hover text-white text-sm font-medium rounded-lg transition-colors;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-border hover:bg-border-light text-white text-sm rounded-lg transition-colors;
+  }
+  .btn-danger {
+    @apply px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-lg transition-colors;
+  }
+  .btn-ghost {
+    @apply px-4 py-2 text-gray-400 hover:text-white hover:bg-border text-sm rounded-lg transition-colors;
+  }
+  .btn-icon {
+    @apply p-2 text-gray-400 hover:text-white hover:bg-border-light rounded-lg transition-colors;
+  }
+  .btn-icon-danger {
+    @apply p-2 text-gray-400 hover:text-red-400 hover:bg-border-light rounded-lg transition-colors;
+  }
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.2s ease-out;
+}
